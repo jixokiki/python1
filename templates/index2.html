@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-Commerce</title>
+</head>
+<body>
+    <h1>Welcome to Simple E-Commerce</h1>
+    <form action="/checkout" method="post">
+        <ul>
+            {% for product in products %}
+                <li>
+                    {{ product['name'] }} - ${{ product['price'] }}
+                    <input type="number" name="{{ product['id'] }}" min="0" value="0">
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="submit">Checkout</button>
+    </form>
+</body>
+</html>

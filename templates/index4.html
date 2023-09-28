@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System</title>
+</head>
+<body>
+    <h1>Welcome to the Authentication System</h1>
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Admin Dashboard</h2>
+    <form method="GET" action="/admin">
+        <label for="admin-username">Admin Username:</label>
+        <input type="text" id="admin-username" name="username" required>
+        <button type="submit">Access Admin Dashboard</button>
+    </form>
+
+    <h2>Add User</h2>
+    <form method="POST" action="/submit">
+        <label for="new-username">New Username:</label>
+        <input type="text" id="new-username" name="name" required><br>
+        <label for="new-role">Role (admin/user):</label>
+        <input type="text" id="new-role" name="role" required><br>
+        <button type="submit">Add User</button>
+    </form>
+</body>
+</html>
