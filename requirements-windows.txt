@@ -1,0 +1,4 @@
+-r requirements.txt
+comtypes==1.2.0
+pypiwin32==223
+pywin32==306

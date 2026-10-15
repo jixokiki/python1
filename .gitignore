@@ -1,7 +1,8 @@
-# Python bytecode
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
 
 # Virtual environments
 .venv/
@@ -16,56 +17,32 @@ ENV/
 *.pem
 *.key
 
-# Tool caches
+# Local databases and backups
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Testing, linting, and coverage
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
 
-# IDE and operating system
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
+
+# Editors and operating system
 .DS_Store
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# Logs
-*.log
-
-# Python cache and virtual environments
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-env/
-
-# Dependencies
+# JavaScript dependencies
 node_modules/
-
-# Environment variables and secrets
-.env
-.env.*
-!.env.example
-
-# Local databases and database backups
-*.db
-*.sqlite
-*.sqlite3
-*.db-journal
-
-# macOS and editor files
-.DS_Store
-.vscode/
-.idea/
-
-# Local database files
-*.db
-*.sqlite
-*.sqlite3
-*.db-journal
