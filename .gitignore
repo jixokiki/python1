@@ -37,3 +37,35 @@ dist/
 
 # Logs
 *.log
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases and database backups
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# macOS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
